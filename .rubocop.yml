@@ -1,0 +1,30 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - 'db/**/*'
+    - 'bin/{rails,rake,bundle}'
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+
+Style/AsciiComments:
+  Enabled: false
+
+Naming/PredicateName:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 160
+
+Layout/HashAlignment:
+  EnforcedColonStyle:
+    - key
+    - table

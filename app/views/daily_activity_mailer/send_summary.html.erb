@@ -1,0 +1,12 @@
+<h1>Daily activities summary.</h1>
+
+<p>There were <%= @certificates_sources_activities[:new] %> new certificates files uploaded.</p>
+<p><%= @certificates_sources_activities[:succesfully_processed] %> were succesfully processed.</p>
+<p><%= @certificates_sources_activities[:partially_processed] %> were partially processed.</p>
+<p><%= @certificates_sources_activities[:failed] %> failed.</p>
+
+<hr>
+
+<p>In the sources, there were <%= @certificates_activities[:entries] %> certificates.</p>
+<p><%= @certificates_activities[:generated_and_sent] %> were succesfully generated and sent.</p>
+<p>Generation of <%= @certificates_activities[:failed] %> certificates failed.</p>
