@@ -22,4 +22,10 @@ Postgres
 ### User Story 2 - Generate Certificate PDF
 
 1. Start the app.
-2. Enter `http://localhost:3000/rails/mailers/pdf_certificate_mailer` - it will show a preview of the email, with the certificate as attached pdf. The data is randomly generated after every reload.
+2. Enter `http://localhost:3000/rails/mailers/pdf_certificate_mailer/send_certificate` - it will show a preview of the email, with the certificate as an attached pdf. The data is randomly generated after every reload.
+
+### User Story 3 - Daily activity summary
+
+1. Start the app
+2. Enter `http://localhost:3000/rails/mailers/daily_activity_mailer/send_summary` - it will show a preview of the daily summary email with mocked data.
+3. Run `cat config/example_sidekiq_schedule.yml` - it will show the defined cron, which would trigger daily summary email at 7 am.
